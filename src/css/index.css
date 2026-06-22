@@ -1,0 +1,23 @@
+@import './node_modules/modern-normalize/modern-normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz@0,9..40;1,9..40&display=swap');
+
+@import url(base/variables.css);
+@import url(base/common.css);
+@import url(base/container.css);
+
+@import url(layout/header.css);
+@import url(layout/modal.css);
+@import url(layout/hero.css);
+@import url(layout/exercises-home.css);
+@import url(layout/exercises.css);
+@import url(layout/footer.css);
+@import url(layout/socials.css);
+@import url(layout/ui-elements.css);
+@import url(layout/filters.css);
+@import url(layout/search.css);
+@import url(layout/categories.css);
+@import url(layout/quotes.css);
+@import url(layout/mobile-menu.css);
+@import url(components/category-card.css);
+@import url(components/preloader.css);
+@import url(components/scroll-to-top.css);

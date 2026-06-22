@@ -1,0 +1,277 @@
+.exercises-header {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  line-height: 136%;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.quote-section-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quote-dynamic-block {
+  display: flex;
+  background-color: var(--primary-color);
+  padding: 20px;
+  gap: 18px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  max-width: 335px;
+}
+
+.quote-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon-run-wrapper {
+  width: 32px;
+  height: 32px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background-color: var(--block-bg-color);
+}
+
+.icon-run {
+  color: var(--white-bg-color);
+  width: 18px;
+  height: 20px;
+}
+
+.quote-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Права колонка з фільтрами та вправами */
+
+
+.quote-author {
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--white-color);
+  display: block;
+  margin-top: auto;
+}
+
+.quote-img {
+  display: block;
+  object-fit: cover;
+  width: 335px;
+  height: 242px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+/* Загальний контейнер для карток */
+.category-container,
+.exercise-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.icon-barbell {
+  color: var(--white-bg-color);
+  width: 20px;
+  height: 20px;
+}
+
+.daily-norm-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--primary-color);
+  margin-bottom: 2px;
+}
+
+.daily-norm-subtitle {
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--text-tertiary-color);
+  margin-bottom: 16px;
+}
+
+.daily-norm-text {
+  font-size: 14px;
+  line-height: 129%;
+  color: var(--primary-color);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+@media (min-width: 768px) {
+  .exercises-header {
+    font-size: 44px;
+    line-height: 48px;
+  }
+  .quote-section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .quote-dynamic-block,
+  .daily-norm-block {
+    min-width: 400px;
+    gap: 16px;
+    height: 249px;
+    flex-shrink: 0;
+    margin-bottom: 0px;
+    padding: 40px;
+  }
+
+  .quote-img {
+    object-fit: cover;
+    height: 249px;
+    margin-bottom: 0px;
+    max-width: 288px;
+  }
+  .icon-run-wrapper {
+    width: 34px;
+  }
+
+  .quote-title-wrapper {
+    margin-bottom: 6px;
+  }
+
+  .icon-quote {
+    width: 24px;
+    height: 24px;
+  }
+
+  .quote-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+  }
+
+  .quote {
+    margin-bottom: 18px;
+  }
+
+  .quote-author {
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white-color);
+  }
+
+  .daily-norm-title {
+    font-size: 24px;
+    line-height: 133%;
+  }
+
+  .daily-norm-subtitle {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .exercises-header {
+    margin: 0 auto 0 0;
+    width: auto;
+  }
+  .quote-section-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 32px;
+  }
+  .quote-dynamic-block,
+  .daily-norm-block {
+    min-width: 444px;
+    height: auto;
+  }
+
+  .quote-img {
+    height: 242px;
+    min-width: 444px;
+  }
+
+  .quote {
+    margin-bottom: 8px;
+  }
+
+  .daily-norm-text {
+    overflow: visible;
+    text-overflow: unset;
+    display: block;
+    -webkit-line-clamp: unset;
+    -webkit-box-orient: unset;
+  }
+}
+
+.exercises-container {
+  padding-bottom: 80px;
+}
+
+.exercises-wrapper {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.favorites-content-wrapper {
+  flex-direction: column;
+  gap: 40px;
+}
+
+.favorites-content-wrapper .exercises-wrapper {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .exercises-container {
+    max-width: 769px;
+    padding-bottom: 100px;
+  }
+  .exercises-wrapper {
+    margin-bottom: 64px;
+  }
+  .favorites-content-wrapper {
+    gap: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .exercises-container {
+    max-width: 1440px;
+    padding-bottom: 132px;
+  }
+  .content-wrapper {
+    flex-direction: row;
+    gap: 32px;
+  }
+  .exercises-wrapper {
+    margin-bottom: 0;
+  }
+}
+
+.favorites-header {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .exercises-header {
+    margin-bottom: 32px;
+  }
+}
